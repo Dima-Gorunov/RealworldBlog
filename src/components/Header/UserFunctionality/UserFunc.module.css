@@ -1,0 +1,58 @@
+.actions {
+    /* Стили для блока с действиями */
+    display: flex;
+    align-items: center;
+}
+
+.createArticle {
+    /* Стили для кнопок */
+    background-color: #FFF;
+    padding-left: 17px;
+    padding-right: 17px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #52C41A;
+    margin-right: 27px;
+}
+
+
+.userInfo {
+    /* Стили для блока с информацией о пользователе */
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    /* Стили для имени пользователя */
+    font-size: 18px;
+    line-height: 28px;
+    margin-right: 13px;
+}
+
+.avatar {
+    /* Стили для аватара пользователя */
+    margin-right: 27px;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+}
+
+.logout {
+    /* Стили для кнопки "Logout" */
+    background-color: #FFF;
+    height: 51px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    line-height: 51px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}

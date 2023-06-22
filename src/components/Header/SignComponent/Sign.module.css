@@ -1,0 +1,32 @@
+.authButtons {
+    /* Стили для блока кнопок аутентификации */
+    display: flex;
+}
+
+.link {
+    /* Стили для кнопок */
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    height: 51px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    line-height: 51px;
+}
+
+.button_active {
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #52C41A;
+}
+
+.signIn {
+    /* Стили для кнопки "Sign In" */
+}
+
+.signUp {
+    /* Стили для кнопки "Sign Up" */
+}

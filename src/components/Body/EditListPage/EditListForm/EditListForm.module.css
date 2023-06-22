@@ -1,0 +1,170 @@
+
+.container {
+    max-width: 938px;
+    margin: auto;
+    box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 48px 36.5px;
+}
+
+.header {
+    /* Стили для заголовка */
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.formGroup {
+    /* Стили для контейнера группы полей */
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.formGroup input {
+    outline: none;
+}
+
+
+.inputText {
+    resize: none;
+    width: 100%;
+    min-height: 168px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.inputText:focus {
+    border: 1px solid #1890FF;
+}
+
+.tagsContainer{
+    margin-bottom: 21px;
+}
+
+.tagContainer{
+    display: flex;
+    margin-bottom: 5px;
+    column-gap: 17px;
+}
+
+.tagContainer:last-child{
+    margin-bottom: 0;
+}
+
+.inputTag{
+    width: 300px;
+    outline: none;
+
+}
+
+
+.label {
+    /* Стили для меток */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+.input {
+    /* Стили для полей ввода */
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    border: 1px solid #1890FF;
+}
+
+.button {
+    /* Стили для кнопки "Create" */
+    width: 319px;
+    max-width: 100%;
+    background: #1890FF;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+
+.deleteButton {
+    color: red;
+    border: 1px solid red;
+
+}
+
+.subButton {
+    width: 136px;
+    background: none;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.subButton:hover{
+    cursor: pointer;
+}
+
+.addButton {
+    color: #1890FF;
+    border: 1px solid #1890FF;
+}
+
+.error {
+    /* Стили для обводки красным цветом */
+    border-color: red;
+}
+
+.errorMessage {
+    /* Стили для текста ошибки красным цветом */
+    color: red;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.signInText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8C8C8C;
+    text-align: center;
+}
+
+.signInText a {
+    text-decoration: none;
+    color: #1890FF;
+}

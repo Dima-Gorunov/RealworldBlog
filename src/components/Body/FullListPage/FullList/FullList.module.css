@@ -1,0 +1,276 @@
+.listContainer {
+    /* Стили для общего контейнера списка */
+    position: relative;
+    max-width: 941px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 14px 24px 19px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 26px;
+    border-start-start-radius: 2px;
+    border-end-start-radius: 2px;
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+}
+
+.articleHeader {
+    /* Стили для верхней части списка с заголовком, тегами, лайками и информацией об авторе */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.articleInfoContainer {
+    /* Стили для контейнера основ инфо */
+    display: grid;
+    max-width: 600px;
+    grid-template-areas: 'articleTitle likesContainer .'
+    'tags tags tags';
+    grid-column-gap: 13px;
+    grid-row-gap: 6px;
+
+}
+
+.articleTitle {
+    /* Стили для заголовка статьи */
+    grid-area: articleTitle;
+    color: #1890FF;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    word-wrap: break-word;
+
+}
+
+.tags {
+    /* Стили для контейнера с тегами */
+    grid-area: tags;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+.tag {
+    /* Стили для тега */
+    height: 20px;
+    line-height: 15px;
+    vertical-align: middle;
+    padding: 2px 5px 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    margin-right: 8px;
+    opacity: .5;
+    transition: .1s;
+    margin-bottom: 4px;
+}
+
+.tag:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: .1s;
+}
+
+
+.likesContainer {
+    /* Стили для контейнера с лайками */
+    grid-area: likesContainer;
+    display: flex;
+    align-items: center;
+}
+
+.listContainer {
+
+}
+
+.likeIcon {
+    /* Стили для SVG-иконки лайка */
+    margin-right: 5px;
+}
+
+.likeIcon:hover {
+    cursor: pointer;
+}
+
+.likesCount {
+    /* Стили для количества лайков */
+}
+
+.authorInfo {
+    /* Стили для контейнера с информацией об авторе */
+    display: grid;
+    grid-template-areas: 'authorName authorAvatar'
+        'postDate authorAvatar';
+    height: 46px;
+    grid-column-gap: 12px;
+}
+
+.authorName {
+    /* Стили для имени автора */
+    grid-area: authorName;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.authorAvatar {
+    /* Стили для аватара автора */
+    grid-area: authorAvatar;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.authorAvatar img {
+    width: 46px;
+    height: 46px;
+}
+
+.postDate {
+    /* Стили для даты создания поста */
+    grid-area: postDate;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contentContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(auto, 50%) minmax(auto, 50%);
+    grid-template-areas: 'description functional'
+        'body body';
+}
+
+.description {
+    /* Стили для блока с текстом поста */
+    grid-area: description;
+    max-width: 682px;
+    color: rgba(0, 0, 0, 0.5);
+    word-break: break-word;
+
+}
+
+.functional {
+    grid-area: functional;
+    display: flex;
+    column-gap: 27px;
+    justify-content: flex-end;
+}
+
+.container{
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    top: -2px;
+    left: 86px;
+    width: 240px;
+    text-align: left;
+    padding: 12px 16px 12px 16px;
+    color: #595959;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+}
+
+.popup:hover{
+    cursor: auto;
+}
+
+.popup:before {
+    content: url("./assets/arrow.png");
+    position: absolute;
+    top: 0;
+    left: -6px;
+}
+
+.text {
+    display: flex;
+    column-gap: 9px;
+}
+
+.text img {
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+}
+
+.text:before {
+
+}
+
+.popupAgree {
+    border: 1px solid #0099dd;
+    background: #0099dd;
+    color: #FFFFFF;
+
+}
+
+.buttons {
+    display: flex;
+    column-gap: 8px;
+    justify-content: flex-end;
+}
+
+.popupButton {
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 22px;
+    border-radius: 4px;
+}
+
+.popupButton:hover {
+    cursor: pointer;
+}
+
+.popupDis {
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+}
+
+
+.buttonFunc {
+    /* Стили для кнопок */
+    background-color: #FFF;
+    padding-left: 19px;
+    padding-right: 19px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #52C41A;
+}
+
+.deleteButton {
+    color: red;
+    border: 1px solid red;
+    position: relative;
+}
+
+.body {
+    grid-area: body;
+    word-wrap: break-word;
+    padding-right: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}

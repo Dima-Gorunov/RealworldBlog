@@ -1,0 +1,111 @@
+
+.container {
+    max-width: 384px;
+    margin: auto;
+    box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 48px 36.5px;
+
+}
+
+.header {
+    /* Стили для заголовка */
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.formGroup {
+    /* Стили для контейнера группы полей */
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.formGroup input {
+    outline: none;
+}
+
+.label {
+    /* Стили для меток */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.input {
+    /* Стили для полей ввода */
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    border: 1px solid #1890FF;
+}
+
+
+.button {
+    /* Стили для кнопки "Create" */
+    width: 100%;
+    background: #1890FF;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    margin-top: 9px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.error {
+    /* Стили для обводки красным цветом */
+    border-color: red;
+}
+
+.errorMessage {
+    /* Стили для текста ошибки красным цветом */
+    color: red;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.signInText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8C8C8C;
+    text-align: center;
+}
+
+.signInText a {
+    text-decoration: none;
+    color: #1890FF;
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.disabled:hover {
+    cursor: auto;
+}

@@ -1,0 +1,134 @@
+.listContainer {
+    /* Стили для общего контейнера списка */
+    max-width: 941px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 14px 24px 19px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 26px;
+    border-start-start-radius: 2px;
+    border-end-start-radius: 2px;
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+    opacity: .7;
+}
+
+.articleHeader {
+    /* Стили для верхней части списка с заголовком, тегами, лайками и информацией об авторе */
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleInfoContainer {
+    /* Стили для контейнера основ инфо */
+    display: grid;
+    grid-template-areas: 'articleTitle likesContainer .'
+    'tags tags tags';
+    grid-column-gap: 13px;
+    grid-row-gap: 6px;
+}
+
+.articleTitle {
+    /* Стили для заголовка статьи */
+    grid-area: articleTitle;
+    height: 24px;
+    width: 100px;
+    background-color: lightgrey;
+    border-radius: 12px;
+}
+
+.articleTitleLong {
+    width: 200px;
+}
+
+
+.tags {
+    /* Стили для контейнера с тегами */
+    grid-area: tags;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin-bottom: 12px;
+}
+
+.tag {
+    /* Стили для тега */
+    height: 20px;
+    width: 45px;
+    margin-right: 15px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+
+.likesContainer {
+    /* Стили для контейнера с лайками */
+    grid-area: likesContainer;
+    height: 24px;
+    width: 30px;
+    background-color: lightgrey;
+    border-radius: 12px;
+}
+
+.authorInfo {
+    /* Стили для контейнера с информацией об авторе */
+    display: grid;
+    grid-template-areas: 'authorName authorAvatar'
+        'postDate authorAvatar';
+    height: 46px;
+    grid-column-gap: 12px;
+}
+
+.authorName {
+    /* Стили для имени автора */
+    grid-area: authorName;
+    height: 20px;
+    width: 70px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.authorNameLong{
+    width: 120px;
+}
+
+.authorAvatar {
+    /* Стили для аватара автора */
+    grid-area: authorAvatar;
+    margin-right: 27px;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: lightgrey;
+}
+
+.postDate {
+    /* Стили для даты создания поста */
+    grid-area: postDate;
+    color: rgba(0, 0, 0, 0.5);
+    height: 20px;
+    width: 90px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.postContent {
+    /* Стили для блока с текстом поста */
+    max-width: 682px;
+    height: 24px;
+    width: 300px;
+    background-color: lightgrey;
+    border-radius: 12px;
+}
+
+.postContentLong {
+    /* Стили для блока с текстом поста */
+    max-width: 682px;
+    height: 24px;
+    width: 560px;
+    background-color: lightgrey;
+    border-radius: 12px;
+}

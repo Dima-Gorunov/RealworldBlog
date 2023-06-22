@@ -1,0 +1,75 @@
+.formGroup {
+    /* Стили для контейнера группы полей */
+    margin-bottom: 12px;
+    display: flex;
+    gap: 17px;
+}
+
+.formGroup label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.formGroup input {
+    outline: none;
+}
+
+.formGroupText:focus {
+    border: 1px solid #1890FF;
+}
+
+.inputTag {
+    width: 300px;
+}
+
+.input {
+    /* Стили для полей ввода */
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    border: 1px solid #1890FF;
+}
+
+.button {
+    width: 136px;
+    background: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+.deleteButton {
+    color: red;
+    border: 1px solid red;
+}
+
+.addButton {
+    color: #1890FF;
+    border: 1px solid #1890FF;
+}
+
+
+.error {
+    /* Стили для обводки красным цветом */
+    border-color: red;
+}
+
+.errorMessage {
+    /* Стили для текста ошибки красным цветом */
+    color: red;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
